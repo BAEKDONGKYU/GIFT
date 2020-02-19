@@ -1,0 +1,243 @@
+@font-face { font-family: 'Binggrae-Bold'; src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal;}
+@font-face { font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+.register_form_in {
+	box-shadow: 0px 10px 40px 0px rgba(56, 74, 235, 0.1);
+	text-align: center;
+	border-top: solid 2px #f54245; 
+	width: 800px;
+	margin: 0 auto; 
+	margin-bottom: 0px;
+}
+
+.register_form_in .register_form {
+	max-width: 800px;
+	margin: auto;
+	margin-bottom: 30px;
+	font-family: 'S-CoreDream-4Regular';
+	font-weight: 500;
+	color: black;
+}
+
+.register_lg_1 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%
+}
+
+.mini {
+	font-family: 'Binggrae-Bold';
+}
+
+.purple {
+	font-family: 'S-CoreDream-4Regular';
+	font-weight: 800;
+	width: 800px;
+	margin: 0 auto; 
+}
+
+.mypage{
+	font-size: 3em;
+	color: black;
+	font-weight: 900;
+	font-family: 'S-CoreDream-6Bold';
+}
+
+.red{
+	color: red;
+	margin-left: 5px;
+}
+
+p{
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+tr{
+	font-weight: 600;
+}
+
+.notice{
+	font-size: 0.8em;
+	color: #1f2120;
+	width: 800px;
+	text-align: left;
+	font-weight: 600;
+}
+
+.btn1 a, .btn2 a{
+	color: white !important;
+}
+
+.btn1,.btn2{
+	font-family: 'Binggrae-Bold';
+	width: 50%;
+	background-color: #384aeb;
+	padding: 5px;
+	cursor:pointer;
+}
+.btn2{
+	background-color: #f54245;
+}
+.btn1:HOVER,.btn2:HOVER{
+	opacity:0.8;
+}
+
+.info{
+	width: 100%; 	
+	margin-bottom: 10px;
+	margin-top: 10px; 
+}
+.info td{
+	padding: 7px;
+}
+
+.info_title{
+	font-family: 'S-CoreDream-6Bold';
+	font-size: 1.3em;
+	background-color: #ebedec;
+}
+
+.tab{
+	font-weight: 600;
+	
+}
+
+.register-group {
+	margin-bottom: 1.5em;
+	margin-left: 2em;
+}
+
+.register-group label {
+	margin-left: -70px;
+	width: 100px;
+	text-align: left;
+	margin-right: 40px;
+	color: black;
+}
+
+.register-control {
+	display: inline;
+	width: 300px;
+	height: calc(2.25rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+#tel, #tel_2 {
+	width: 90px;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	color: #999999;
+	text-align: center;
+}
+
+#email {
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	color: #999999;
+	padding: 6px 12px;
+}
+
+#sample4_postcode {
+	width: 140px;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	color: #999999;
+	padding: 6px 12px;
+}
+
+#sample4_address, #sample4_detailAddress, #sample4_extraAddress {
+	width: 300px;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	color: #999999;
+	display: block;
+	margin-left: 285px;
+	margin-top: 5px;
+	padding: 6px 12px;
+}
+
+.register_form .register-group input {
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #cccccc;
+	border-radius: 0px;
+	outline: none;
+	box-shadow: none;
+	font-size: 14px;
+	color: #999999
+}
+
+.btn_r:hover {
+	background: white !important;
+	color: black !important;
+	border: 1px solid #dae0e5 !important
+}
+
+
+label {
+	font-weight: 700;
+}
+
+.hr {
+	border-top: dotted 1px #f54245 !important;
+}
+
+.signbtn {
+	width: 370px;
+	float: left;
+	padding: 8px;
+	border: none;
+	font-family: 'Binggrae-Bold';
+	color: white;
+}
+
+.signbtn:HOVER {
+	opacity: 0.8;
+}
+
+.signup{
+	font-size: 3em;
+	color: black;
+	font-weight: 900;
+	font-family: 'S-CoreDream-6Bold';
+}
+
+#id{
+	color: black;
+}
+
+#pass_hidden {
+	display: none;
+}
+

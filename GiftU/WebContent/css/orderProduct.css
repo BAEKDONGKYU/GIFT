@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+#p_head,#p_body,#p_footer {
+
+	padding-left: 300px;
+} 
+.vt {
+	vertical-align: top;
+}
+.phone {
+	text-align: center;
+}
+.index_title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'S-CoreDream-6Bold';
+}
+.totalMoney{
+	border : 1px solid #656565;
+	margin-top: 5px;
+	width: 1350px;
+	padding:20px;
+	text-align: center;
+}
+.delivery-info {
+	border : 1px solid grey;
+	width: 1350px;
+}
+
+
+.payment_option {
+	border : 1px solid #656565;
+	width: 1350px;
+}
+
+#insertHistoryForm{
+	font-family:  'S-CoreDream-5Medium';
+	color: black;
+	
+}
+
+.delevery_info_th{
+	width: 300px;
+}
+.delevery_info_value {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	
+}
+
+#address{
+	width: 400px !important;
+}
+#detailAddress {
+	width: 500px !important;
+}
+.class {
+	margin-left: 10px;
+	
+}
+#msg {
+	width : 600px !important;
+	
+}
+.payment {
+	margin-right: 30px;
+}
+
+
+.payment_option {
+	float: left;
+}
+
+.payment_option label {
+	margin-left: 20px;
+}
+.payment_info {
+	/* display: none; */
+	border: 1px dotted #656565;
+	width: 1347px;
+	float: left;
+}
+
+.payment_info table{
+	width: 999px;
+}
+
+.payment_total {
+	width: 1350px;
+	height: 200px;
+/* 	border: 2px solid #656565; */
+}
+
+#bank,#depositor_name {
+	 margin-left: 20px; 
+}
+#depositor_name {
+	width: 280px !important;
+}
+.paymentButton {
+	float: left;
+	/* padding-left: 30px; */
+	width: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: 800;
+    border: none;
+    color: white;
+    background-color: #fa4d56;
+    cursor: pointer;
+}
+.paymentButton:HOVER{
+	opacity: 0.8;
+}
+
+#cart_button{
+	background-color: #6064f7;		
+}
+

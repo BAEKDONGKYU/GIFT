@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 
+	다른 파일의 SQL문과 구별하기 위해 mapper.member로 네임스페이스를 지정하고
+	sql문을 실행한후 검색하여 반환되는 회원정보 레코드를 저장하기 위한 resultMap를 지정합니다. 
+	각 레코드는 한개의 MemberVO객체를 생성한후 지정한 변수(속성)에 따라 레코드의 컬럼값을 저장 합니다. 
+	<select>태그의 id속성은 MemberDAO에서 sql문을 구분해서 호출하는 용도로 사용되며,
+	반환되는 레코드를 id가 memResult인 <resultMap>에 저장 합니다. 
+ -->
+
+
+
+
+
+<!-- 다른 파일의 SQL문과 구별하기 위해 mapper.member로 네임스페이스를 지정합니다. -->
+<mapper namespace="mapper.product">
+
+
+ 
+<!--   조회한 레코드를 지정한 컬럼 이름을key, 값을 value로 해서 저장함  -->
+ <resultMap id="productResult" type="productBean">
+		 <!--  DB로부터 검색한 회원정보를 하나의 레코드단위로 가져와서 memberVO의 각변수에저장 -->
+		<result property="gender" column="gender"/>
+		<result property="age" column="age"/>
+		<result property="event" column="event"/>
+		<result property="price" column="price"/>
+		<result property="filename" column="filename"/>
+		<result property="name" column="name"/>
+		<result property="num" column="num"/>
+		
+</resultMap>
+ 
+ 
+	<!-- id=DAO에서 id를 이용해 해당 SQL문을 호출합니다.	 -->
+	<select id="selectProductByCtegory" resultMap="productResult" parameterType="productBean">
+		
+		<![CDATA[
+      	 select * from product	
+      	  ]]> 
+      	<trim prefix="where" prefixOverrides="and">
+     
+      	<if test="event !='undefined' and event != null">      	
+			and event LIKE CONCAT('%',#{event},'%')
+		</if>   
+		<if test="gender != 'undefined' and gender != null ">
+			and gender = #{gender} 		
+		</if>
+		<if test="age != null and age != 1 ">
+        	 and age = #{age}
+         </if>
+      	<if test="price != null and price != 1">
+         <![CDATA[
+         and price >= #{price} and price <= #{price}+10000
+         ]]>       
+         </if>
+	 	
+       </trim>
+	</select>
+ 
+	
+	
+</mapper>
+
+
+
+
+
+
+
+
+

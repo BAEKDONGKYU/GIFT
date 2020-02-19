@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+#p_head {
+	padding-left: 300px;
+} 
+
+#p_body {
+	padding-left: 320px;
+}
+
+.time {
+	text-align: center;	
+}
+
+
+.select_time {
+	float: left;
+	width : 100px;
+	margin-left: 20px;
+	height: 50px;
+	
+}
+.select_time button {
+	margin-top: 15px;
+	width : 100px !important;
+	height: 50px !important;
+}
+
+
+
+
+.search_time {
+	 float: left; 
+	 /* height: 500px; */
+}
+
+.search_time div input {
+	float: left;
+	margin-left: 40px;
+	width: 150px;
+	height: 50px;
+}
+.clear {
+	clear: both;
+}
+
+#search {
+	float : left;
+	width: 150px;
+	height: 50px;
+}

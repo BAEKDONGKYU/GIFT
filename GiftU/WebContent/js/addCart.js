@@ -1,0 +1,5 @@
+$(function () {
+	$("#addCart").click(function () {
+		
+	});
+});
